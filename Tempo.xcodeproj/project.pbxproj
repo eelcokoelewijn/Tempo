@@ -1,0 +1,878 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A30CD94B1E8516B100375E72 /* MixinCredentialService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30CD9481E8515B600375E72 /* MixinCredentialService.swift */; };
+		A341017F1E7225F5006E35FB /* ContentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34101781E7225F5006E35FB /* ContentType.swift */; };
+		A34101801E7225F5006E35FB /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34101791E7225F5006E35FB /* Header.swift */; };
+		A34101811E7225F5006E35FB /* NetworkKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A341017A1E7225F5006E35FB /* NetworkKit.swift */; };
+		A34101821E7225F5006E35FB /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = A341017B1E7225F5006E35FB /* Request.swift */; };
+		A34101831E7225F5006E35FB /* RequestMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = A341017C1E7225F5006E35FB /* RequestMethod.swift */; };
+		A34101841E7225F5006E35FB /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A341017D1E7225F5006E35FB /* Resource.swift */; };
+		A34101851E7225F5006E35FB /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = A341017E1E7225F5006E35FB /* Response.swift */; };
+		A351EA141E95547A0047EF65 /* Author.swift in Sources */ = {isa = PBXBuildFile; fileRef = A351EA0A1E95547A0047EF65 /* Author.swift */; };
+		A351EA151E95547A0047EF65 /* Issue.swift in Sources */ = {isa = PBXBuildFile; fileRef = A351EA0B1E95547A0047EF65 /* Issue.swift */; };
+		A351EA161E95547A0047EF65 /* JIRAConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A351EA0C1E95547A0047EF65 /* JIRAConfig.swift */; };
+		A351EA171E95547A0047EF65 /* JIRACredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = A351EA0D1E95547A0047EF65 /* JIRACredentials.swift */; };
+		A351EA181E95547A0047EF65 /* WorklogBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = A351EA0E1E95547A0047EF65 /* WorklogBean.swift */; };
+		A351EA191E95547A0047EF65 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A351EA101E95547A0047EF65 /* NetworkService.swift */; };
+		A351EA1A1E95547A0047EF65 /* TempoRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A351EA111E95547A0047EF65 /* TempoRequest.swift */; };
+		A351EA1B1E95547A0047EF65 /* WorklogRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A351EA121E95547A0047EF65 /* WorklogRequest.swift */; };
+		A351EA1C1E95547A0047EF65 /* TempoKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A351EA131E95547A0047EF65 /* TempoKit.swift */; };
+		A383138B1E8D8A63004F9060 /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38313881E8D8965004F9060 /* Command.swift */; };
+		A383138E1E8D9982004F9060 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = A383138C1E8D9951004F9060 /* Action.swift */; };
+		A38313941E8DAA22004F9060 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38313911E8DAA22004F9060 /* File.swift */; };
+		A38313951E8DAA22004F9060 /* Folder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38313921E8DAA22004F9060 /* Folder.swift */; };
+		A38313961E8DAA22004F9060 /* FileKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38313931E8DAA22004F9060 /* FileKit.swift */; };
+		A3E596ED1E74965E007B9F60 /* Arguments.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E596EB1E749631007B9F60 /* Arguments.swift */; };
+		OBJ_100 /* NetworkKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_39 /* NetworkKit.framework */; };
+		OBJ_101 /* FileKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_40 /* FileKit.framework */; };
+		OBJ_102 /* TempoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_41 /* TempoKit.framework */; };
+		OBJ_103 /* App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_42 /* App.framework */; };
+		OBJ_84 /* TempoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_32 /* TempoApp.swift */; };
+		OBJ_85 /* MixinNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_34 /* MixinNetworkService.swift */; };
+		OBJ_87 /* NetworkKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_39 /* NetworkKit.framework */; };
+		OBJ_88 /* FileKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_40 /* FileKit.framework */; };
+		OBJ_89 /* TempoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_41 /* TempoKit.framework */; };
+		OBJ_98 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_36 /* main.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A341013E1E71B242006E35FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = OBJ_44;
+			remoteInfo = NetworkKit;
+		};
+		A341013F1E71B242006E35FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = OBJ_57;
+			remoteInfo = FileKit;
+		};
+		A34101401E71B242006E35FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = OBJ_66;
+			remoteInfo = TempoKit;
+		};
+		A34101411E71B242006E35FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = OBJ_79;
+			remoteInfo = App;
+		};
+		A34101421E71B242006E35FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = OBJ_44;
+			remoteInfo = NetworkKit;
+		};
+		A34101431E71B242006E35FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = OBJ_57;
+			remoteInfo = FileKit;
+		};
+		A34101441E71B242006E35FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = OBJ_66;
+			remoteInfo = TempoKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A30CD9481E8515B600375E72 /* MixinCredentialService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MixinCredentialService.swift; sourceTree = "<group>"; };
+		A34101781E7225F5006E35FB /* ContentType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContentType.swift; path = "Packages/NetworkKit-1.0.7/Sources/ContentType.swift"; sourceTree = SOURCE_ROOT; };
+		A34101791E7225F5006E35FB /* Header.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Header.swift; path = "Packages/NetworkKit-1.0.7/Sources/Header.swift"; sourceTree = SOURCE_ROOT; };
+		A341017A1E7225F5006E35FB /* NetworkKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkKit.swift; path = "Packages/NetworkKit-1.0.7/Sources/NetworkKit.swift"; sourceTree = SOURCE_ROOT; };
+		A341017B1E7225F5006E35FB /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Request.swift; path = "Packages/NetworkKit-1.0.7/Sources/Request.swift"; sourceTree = SOURCE_ROOT; };
+		A341017C1E7225F5006E35FB /* RequestMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RequestMethod.swift; path = "Packages/NetworkKit-1.0.7/Sources/RequestMethod.swift"; sourceTree = SOURCE_ROOT; };
+		A341017D1E7225F5006E35FB /* Resource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Resource.swift; path = "Packages/NetworkKit-1.0.7/Sources/Resource.swift"; sourceTree = SOURCE_ROOT; };
+		A341017E1E7225F5006E35FB /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Response.swift; path = "Packages/NetworkKit-1.0.7/Sources/Response.swift"; sourceTree = SOURCE_ROOT; };
+		A34101861E722F49006E35FB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A351EA0A1E95547A0047EF65 /* Author.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Author.swift; sourceTree = "<group>"; };
+		A351EA0B1E95547A0047EF65 /* Issue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Issue.swift; sourceTree = "<group>"; };
+		A351EA0C1E95547A0047EF65 /* JIRAConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JIRAConfig.swift; sourceTree = "<group>"; };
+		A351EA0D1E95547A0047EF65 /* JIRACredentials.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JIRACredentials.swift; sourceTree = "<group>"; };
+		A351EA0E1E95547A0047EF65 /* WorklogBean.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorklogBean.swift; sourceTree = "<group>"; };
+		A351EA101E95547A0047EF65 /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		A351EA111E95547A0047EF65 /* TempoRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TempoRequest.swift; sourceTree = "<group>"; };
+		A351EA121E95547A0047EF65 /* WorklogRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorklogRequest.swift; sourceTree = "<group>"; };
+		A351EA131E95547A0047EF65 /* TempoKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TempoKit.swift; sourceTree = "<group>"; };
+		A38313881E8D8965004F9060 /* Command.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
+		A383138C1E8D9951004F9060 /* Action.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
+		A38313911E8DAA22004F9060 /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		A38313921E8DAA22004F9060 /* Folder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Folder.swift; sourceTree = "<group>"; };
+		A38313931E8DAA22004F9060 /* FileKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileKit.swift; sourceTree = "<group>"; };
+		A3E596EB1E749631007B9F60 /* Arguments.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Arguments.swift; sourceTree = "<group>"; };
+		OBJ_32 /* TempoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempoApp.swift; sourceTree = "<group>"; };
+		OBJ_34 /* MixinNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MixinNetworkService.swift; sourceTree = "<group>"; };
+		OBJ_36 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		OBJ_39 /* NetworkKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NetworkKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_40 /* FileKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FileKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_41 /* TempoKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TempoKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_42 /* App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_43 /* CLI */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = CLI; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		OBJ_56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_65 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_87 /* NetworkKit.framework in Frameworks */,
+				OBJ_88 /* FileKit.framework in Frameworks */,
+				OBJ_89 /* TempoKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_99 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_100 /* NetworkKit.framework in Frameworks */,
+				OBJ_101 /* FileKit.framework in Frameworks */,
+				OBJ_102 /* TempoKit.framework in Frameworks */,
+				OBJ_103 /* App.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A34101461E7223A9006E35FB /* NetworkKit */ = {
+			isa = PBXGroup;
+			children = (
+				A34101781E7225F5006E35FB /* ContentType.swift */,
+				A34101791E7225F5006E35FB /* Header.swift */,
+				A341017A1E7225F5006E35FB /* NetworkKit.swift */,
+				A341017B1E7225F5006E35FB /* Request.swift */,
+				A341017C1E7225F5006E35FB /* RequestMethod.swift */,
+				A341017D1E7225F5006E35FB /* Resource.swift */,
+				A341017E1E7225F5006E35FB /* Response.swift */,
+			);
+			name = NetworkKit;
+			sourceTree = "<group>";
+		};
+		A351EA081E95547A0047EF65 /* TempoKit */ = {
+			isa = PBXGroup;
+			children = (
+				A351EA091E95547A0047EF65 /* Entities */,
+				A351EA0F1E95547A0047EF65 /* Services */,
+				A351EA131E95547A0047EF65 /* TempoKit.swift */,
+			);
+			name = TempoKit;
+			path = "Packages/TempoKit-1.0.4/Sources/TempoKit";
+			sourceTree = SOURCE_ROOT;
+		};
+		A351EA091E95547A0047EF65 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				A351EA0A1E95547A0047EF65 /* Author.swift */,
+				A351EA0B1E95547A0047EF65 /* Issue.swift */,
+				A351EA0C1E95547A0047EF65 /* JIRAConfig.swift */,
+				A351EA0D1E95547A0047EF65 /* JIRACredentials.swift */,
+				A351EA0E1E95547A0047EF65 /* WorklogBean.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		A351EA0F1E95547A0047EF65 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A351EA101E95547A0047EF65 /* NetworkService.swift */,
+				A351EA111E95547A0047EF65 /* TempoRequest.swift */,
+				A351EA121E95547A0047EF65 /* WorklogRequest.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A383138F1E8DAA22004F9060 /* FileKit */ = {
+			isa = PBXGroup;
+			children = (
+				A38313901E8DAA22004F9060 /* Entities */,
+				A38313931E8DAA22004F9060 /* FileKit.swift */,
+			);
+			name = FileKit;
+			path = "Packages/FileKit-1.0.6/Sources/FileKit";
+			sourceTree = SOURCE_ROOT;
+		};
+		A38313901E8DAA22004F9060 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				A38313911E8DAA22004F9060 /* File.swift */,
+				A38313921E8DAA22004F9060 /* Folder.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		A3E596EA1E7495FA007B9F60 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				A3E596EB1E749631007B9F60 /* Arguments.swift */,
+				A38313881E8D8965004F9060 /* Command.swift */,
+				A383138C1E8D9951004F9060 /* Action.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		OBJ_31 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_32 /* TempoApp.swift */,
+				OBJ_33 /* Services */,
+			);
+			name = App;
+			path = Sources/App;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_33 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_34 /* MixinNetworkService.swift */,
+				A30CD9481E8515B600375E72 /* MixinCredentialService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		OBJ_35 /* CLI */ = {
+			isa = PBXGroup;
+			children = (
+				A3E596EA1E7495FA007B9F60 /* Entities */,
+				OBJ_36 /* main.swift */,
+				A34101861E722F49006E35FB /* Info.plist */,
+			);
+			name = CLI;
+			path = Sources/CLI;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_37 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		OBJ_38 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_39 /* NetworkKit.framework */,
+				OBJ_40 /* FileKit.framework */,
+				OBJ_41 /* TempoKit.framework */,
+				OBJ_42 /* App.framework */,
+				OBJ_43 /* CLI */,
+			);
+			name = Products;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		OBJ_5 = {
+			isa = PBXGroup;
+			children = (
+				OBJ_6 /* Package.swift */,
+				OBJ_7 /* Sources */,
+				OBJ_37 /* Tests */,
+				OBJ_38 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		OBJ_7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				A351EA081E95547A0047EF65 /* TempoKit */,
+				A383138F1E8DAA22004F9060 /* FileKit */,
+				A34101461E7223A9006E35FB /* NetworkKit */,
+				OBJ_31 /* App */,
+				OBJ_35 /* CLI */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		OBJ_44 /* NetworkKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_45 /* Build configuration list for PBXNativeTarget "NetworkKit" */;
+			buildPhases = (
+				OBJ_48 /* Sources */,
+				OBJ_56 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NetworkKit;
+			productName = NetworkKit;
+			productReference = OBJ_39 /* NetworkKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		OBJ_57 /* FileKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_58 /* Build configuration list for PBXNativeTarget "FileKit" */;
+			buildPhases = (
+				OBJ_61 /* Sources */,
+				OBJ_65 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FileKit;
+			productName = FileKit;
+			productReference = OBJ_40 /* FileKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		OBJ_66 /* TempoKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_67 /* Build configuration list for PBXNativeTarget "TempoKit" */;
+			buildPhases = (
+				OBJ_70 /* Sources */,
+				OBJ_78 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TempoKit;
+			productName = TempoKit;
+			productReference = OBJ_41 /* TempoKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		OBJ_79 /* App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_80 /* Build configuration list for PBXNativeTarget "App" */;
+			buildPhases = (
+				OBJ_83 /* Sources */,
+				OBJ_86 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_90 /* PBXTargetDependency */,
+				OBJ_91 /* PBXTargetDependency */,
+				OBJ_92 /* PBXTargetDependency */,
+			);
+			name = App;
+			productName = App;
+			productReference = OBJ_42 /* App.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		OBJ_93 /* CLI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_94 /* Build configuration list for PBXNativeTarget "CLI" */;
+			buildPhases = (
+				OBJ_97 /* Sources */,
+				OBJ_99 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_104 /* PBXTargetDependency */,
+				OBJ_105 /* PBXTargetDependency */,
+				OBJ_106 /* PBXTargetDependency */,
+				OBJ_107 /* PBXTargetDependency */,
+			);
+			name = CLI;
+			productName = CLI;
+			productReference = OBJ_43 /* CLI */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		OBJ_1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 9999;
+				TargetAttributes = {
+					OBJ_44 = {
+						LastSwiftMigration = 0820;
+					};
+					OBJ_66 = {
+						LastSwiftMigration = 0820;
+					};
+				};
+			};
+			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "Tempo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = OBJ_5;
+			productRefGroup = OBJ_38 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				OBJ_44 /* NetworkKit */,
+				OBJ_57 /* FileKit */,
+				OBJ_66 /* TempoKit */,
+				OBJ_79 /* App */,
+				OBJ_93 /* CLI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		OBJ_48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				A34101801E7225F5006E35FB /* Header.swift in Sources */,
+				A34101821E7225F5006E35FB /* Request.swift in Sources */,
+				A341017F1E7225F5006E35FB /* ContentType.swift in Sources */,
+				A34101841E7225F5006E35FB /* Resource.swift in Sources */,
+				A34101831E7225F5006E35FB /* RequestMethod.swift in Sources */,
+				A34101811E7225F5006E35FB /* NetworkKit.swift in Sources */,
+				A34101851E7225F5006E35FB /* Response.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				A38313941E8DAA22004F9060 /* File.swift in Sources */,
+				A38313951E8DAA22004F9060 /* Folder.swift in Sources */,
+				A38313961E8DAA22004F9060 /* FileKit.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				A351EA171E95547A0047EF65 /* JIRACredentials.swift in Sources */,
+				A351EA161E95547A0047EF65 /* JIRAConfig.swift in Sources */,
+				A351EA181E95547A0047EF65 /* WorklogBean.swift in Sources */,
+				A351EA1C1E95547A0047EF65 /* TempoKit.swift in Sources */,
+				A351EA141E95547A0047EF65 /* Author.swift in Sources */,
+				A351EA191E95547A0047EF65 /* NetworkService.swift in Sources */,
+				A351EA1B1E95547A0047EF65 /* WorklogRequest.swift in Sources */,
+				A351EA1A1E95547A0047EF65 /* TempoRequest.swift in Sources */,
+				A351EA151E95547A0047EF65 /* Issue.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_84 /* TempoApp.swift in Sources */,
+				OBJ_85 /* MixinNetworkService.swift in Sources */,
+				A30CD94B1E8516B100375E72 /* MixinCredentialService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				A3E596ED1E74965E007B9F60 /* Arguments.swift in Sources */,
+				A383138E1E8D9982004F9060 /* Action.swift in Sources */,
+				OBJ_98 /* main.swift in Sources */,
+				A383138B1E8D8A63004F9060 /* Command.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		OBJ_104 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = OBJ_44 /* NetworkKit */;
+			targetProxy = A341013E1E71B242006E35FB /* PBXContainerItemProxy */;
+		};
+		OBJ_105 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = OBJ_57 /* FileKit */;
+			targetProxy = A341013F1E71B242006E35FB /* PBXContainerItemProxy */;
+		};
+		OBJ_106 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = OBJ_66 /* TempoKit */;
+			targetProxy = A34101401E71B242006E35FB /* PBXContainerItemProxy */;
+		};
+		OBJ_107 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = OBJ_79 /* App */;
+			targetProxy = A34101411E71B242006E35FB /* PBXContainerItemProxy */;
+		};
+		OBJ_90 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = OBJ_44 /* NetworkKit */;
+			targetProxy = A34101421E71B242006E35FB /* PBXContainerItemProxy */;
+		};
+		OBJ_91 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = OBJ_57 /* FileKit */;
+			targetProxy = A34101431E71B242006E35FB /* PBXContainerItemProxy */;
+		};
+		OBJ_92 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = OBJ_66 /* TempoKit */;
+			targetProxy = A34101441E71B242006E35FB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		OBJ_3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "-DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				USE_HEADERMAP = NO;
+			};
+			name = Debug;
+		};
+		OBJ_4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_OPTIMIZATION_LEVEL = s;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				OTHER_SWIFT_FLAGS = "-DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 3.0;
+				USE_HEADERMAP = NO;
+			};
+			name = Release;
+		};
+		OBJ_46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Tempo.xcodeproj/NetworkKit_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = NetworkKit;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGET_NAME = NetworkKit;
+			};
+			name = Debug;
+		};
+		OBJ_47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Tempo.xcodeproj/NetworkKit_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = NetworkKit;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGET_NAME = NetworkKit;
+			};
+			name = Release;
+		};
+		OBJ_59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Tempo.xcodeproj/FileKit_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = FileKit;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGET_NAME = FileKit;
+			};
+			name = Debug;
+		};
+		OBJ_60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Tempo.xcodeproj/FileKit_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = FileKit;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGET_NAME = FileKit;
+			};
+			name = Release;
+		};
+		OBJ_68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Tempo.xcodeproj/TempoKit_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = TempoKit;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGET_NAME = TempoKit;
+			};
+			name = Debug;
+		};
+		OBJ_69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Tempo.xcodeproj/TempoKit_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = TempoKit;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGET_NAME = TempoKit;
+			};
+			name = Release;
+		};
+		OBJ_81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Tempo.xcodeproj/App_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = App;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGET_NAME = App;
+			};
+			name = Debug;
+		};
+		OBJ_82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Tempo.xcodeproj/App_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = App;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGET_NAME = App;
+			};
+			name = Release;
+		};
+		OBJ_95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/CLI/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = nl.eelcokoelewijn.tempo.cli;
+				SWIFT_FORCE_DYNAMIC_LINK_STDLIB = YES;
+				SWIFT_FORCE_STATIC_LINK_STDLIB = NO;
+				TARGET_NAME = CLI;
+			};
+			name = Debug;
+		};
+		OBJ_96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/CLI/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = nl.eelcokoelewijn.tempo.cli;
+				SWIFT_FORCE_DYNAMIC_LINK_STDLIB = YES;
+				SWIFT_FORCE_STATIC_LINK_STDLIB = NO;
+				TARGET_NAME = CLI;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		OBJ_2 /* Build configuration list for PBXProject "Tempo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_3 /* Debug */,
+				OBJ_4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_45 /* Build configuration list for PBXNativeTarget "NetworkKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_46 /* Debug */,
+				OBJ_47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_58 /* Build configuration list for PBXNativeTarget "FileKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_59 /* Debug */,
+				OBJ_60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_67 /* Build configuration list for PBXNativeTarget "TempoKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_68 /* Debug */,
+				OBJ_69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_80 /* Build configuration list for PBXNativeTarget "App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_81 /* Debug */,
+				OBJ_82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_94 /* Build configuration list for PBXNativeTarget "CLI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_95 /* Debug */,
+				OBJ_96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = OBJ_1 /* Project object */;
+}

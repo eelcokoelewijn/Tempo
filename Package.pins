@@ -1,0 +1,24 @@
+{
+  "autoPin": true,
+  "pins": [
+    {
+      "package": "FileKit",
+      "reason": null,
+      "repositoryURL": "https://github.com/eelcokoelewijn/FileKit.git",
+      "version": "1.0.6"
+    },
+    {
+      "package": "NetworkKit",
+      "reason": null,
+      "repositoryURL": "https://github.com/eelcokoelewijn/NetworkKit.git",
+      "version": "1.0.7"
+    },
+    {
+      "package": "TempoKit",
+      "reason": null,
+      "repositoryURL": "https://github.com/eelcokoelewijn/TempoKit.git",
+      "version": "1.0.4"
+    }
+  ],
+  "version": 1
+}
